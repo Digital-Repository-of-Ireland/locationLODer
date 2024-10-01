@@ -1,0 +1,183 @@
+
+declare namespace marc="http://www.loc.gov/MARC21/slim";
+declare namespace xsi="http://www.w3.org/2001/XMLSchema-instance";
+prefix spatial: <http://geovocab.org/spatial#> 
+prefix logprop: <http://data.logainm.ie/ontology/>
+prefix logcat: <http://data.logainm.ie/category/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+
+(: Parish of [Parish Name] - or -  Parishes of [Parish Name] & [Parish Name] (NOT ALWAYS PRESENT) :)
+(: Barony of [Barony Name] - or - Baronies of [Barony Name] & [Barony Name] (NOT ALWAYS PRESENT) :)
+(: [City Name] (NOT ALWAYS PRESENT) :)
+(: County [County Name] - or - Counties [County Name] & [County Name] :)
+(: Province of [Province Name] :)
+(: Ireland :)
+
+declare function local:splitPlaces($places, $element) {
+  for $tok in fn:tokenize($places, "&amp;")
+  return element {$element} {fn:normalize-space($tok)}
+};
+
+
+declare function local:parsePlace($place) {
+  if ($place eq "Ireland.") then ()
+  else if(fn:starts-with($place, "Parish")) then <parishes>{local:splitPlaces(fn:substring-after($place, "of "), "parish")}</parishes>
+  else if(fn:starts-with($place, "Baron")) then <baronies>{local:splitPlaces(fn:substring-after($place, "of "), "barony")}</baronies>
+  else if(fn:starts-with($place, "Province of ")) then <provinces>{local:splitPlaces(fn:substring-after($place, "of "), "province")}</provinces>
+  else if(fn:starts-with($place, "County of ")) then <counties>{local:splitPlaces(fn:substring-after($place, "County "), "county")}</counties>
+  else if(fn:starts-with($place, "Counties of ")) then <counties>{local:splitPlaces(fn:substring-after($place, "Counties "), "county")}</counties>
+  else if(fn:starts-with($place, "County ")) then <counties>{local:splitPlaces(fn:substring-after($place, "County "), "county")}</counties>
+  else if(fn:starts-with($place, "Counties ")) then <counties>{local:splitPlaces(fn:substring-after($place, "Counties "), "county")}</counties>
+    else <city>{$place}</city>
+};
+
+
+
+declare function local:parsePlaces($placeString) {
+<parsed>{
+  for $place in fn:tokenize($placeString, ",")
+    return local:parsePlace(fn:normalize-space($place))
+}</parsed>
+};
+
+declare function local:default($seq) {
+  if (fn:empty($seq)) then
+    xsparql:createLiteral("dummy")
+  else for $s in $seq 
+       return xsparql:createLiteral($s)
+       (: return $s :)
+};
+
+
+declare function local:execQuery($parishes, $baronies, $cities, $counties, $provinces) {
+    for $parish in local:default($parishes)
+    for $barony in local:default($baronies)
+    for $city in local:default($cities)
+    for $county in local:default($counties)
+    for $province in local:default($provinces)
+
+        (: return <p>{$parish}</p> :)
+
+    let $x := <results>{
+      for * from <http://data.logainm.ie/> endpoint <http://logainm.deri.ie/sparql?format=xml&amp;query=>
+      where { {
+            $uri a spatial:Feature; logprop:type logcat:PAR ; foaf:name $par . filter (regex(str($par), $parish, "i") && lang($par) = "en") .
+            optional { $uri spatial:P [ foaf:name $bar; logprop:type logcat:BAR ] . filter (regex(str($bar), $barony, "i") && lang($bar) = "en") }
+            optional { $uri spatial:P [ foaf:name $cty; logprop:type logcat:CTN ] . filter (regex(str($cty), $city, "i") && lang($cty) = "en") }
+            optional { $uri spatial:P [ foaf:name $con; logprop:type logcat:CON ] . filter (regex(str($con), $county, "i") && lang($con) = "en")  }
+            optional { $uri spatial:P [ foaf:name $prov; logprop:type logcat:CUIGE ] . filter (regex(str($prov), $province, "i") && lang($prov) = "en") }
+          } union {
+            $uri foaf:name $bar; logprop:type logcat:BAR . filter (regex(str($bar), $barony, "i") && lang($bar) = "en") .
+            optional { $uri spatial:P [ foaf:name $cty; logprop:type logcat:CTN ] . filter (regex(str($cty), $city, "i") && lang($cty) = "en") }
+            optional { $uri spatial:P [ foaf:name $con; logprop:type logcat:CON ] . filter (regex(str($con), $county, "i") && lang($con) = "en")  }
+            optional { $uri spatial:P [ foaf:name $prov; logprop:type logcat:CUIGE ] . filter (regex(str($prov), $province, "i") && lang($prov) = "en") }
+          } union {
+            $uri foaf:name $cty; logprop:type logcat:CTH . filter (regex(str($cty), $city, "i") && lang($cty) = "en") .
+            optional { $uri spatial:P [ foaf:name $con; logprop:type logcat:CON ] . filter (regex(str($con), $county, "i") && lang($con) = "en")  }
+            optional { $uri spatial:P [ foaf:name $prov; logprop:type logcat:CUIGE ] . filter (regex(str($prov), $province, "i") && lang($prov) = "en") }
+          } union {
+            $uri foaf:name $con; logprop:type logcat:CON . filter (regex(str($con), $county, "i") && lang($con) = "en") .
+            optional { $uri spatial:P [ foaf:name $prov; logprop:type logcat:CUIGE ] . filter (regex(str($prov), $province, "i") && lang($prov) = "en") }
+          } union {
+            $uri foaf:name $prov; logprop:type logcat:CUIGE . filter (regex(str($prov), $province, "i") && lang($prov) = "en")
+          }
+        }
+    order by $par $bar $cty $con $prov
+    return <result><uri>{$uri}</uri><par>{$par}</par><bar>{$bar}</bar><city>{$cty}</city><county>{$con}</county><province>{$prov}</province></result>
+      }</results>
+    let $ordered := for $y in $x/*
+                    order by count($y//text()) descending 
+                    return $y
+    return <marc:datafield tag="651" ind1="" ind2="7">
+             <marc:subfield code="2">logainm.ie</marc:subfield>{
+             <marc:subfield code="a">{let $x := $ordered[1]//text() return $x[2]}</marc:subfield>
+             <marc:subfield code="0">{$ordered[1]/uri/text()}</marc:subfield>
+        }</marc:datafield>
+};
+
+
+
+
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">{
+(: for $record in doc("longfield_samples_marcxml.xml")//marc:record :)
+for $record in doc("./longfieldbibs.xml")//marc:record
+return <marc:record>{
+  for $field in $record/*
+  return if ($field[@tag="522"]) then
+    ($field,
+     let $parsed := local:parsePlaces($field/marc:subfield/text())
+     return local:execQuery($parsed//parish/text(), $parsed//barony/text(), $parsed//city/text(), $parsed//county/text(), $parsed//province/text())
+    )
+    else $field
+}</marc:record>
+}</marc:collection>
+
+
+
+  (: for $record in doc("./longfieldbibs.xml")//marc:record :)
+  (: for $field in $record/* :)
+  (: return if ($field[@tag="522"]) then :)
+  (: let $parsed := local:parsePlaces($field/marc:subfield/text()) return :)
+  (:   (\: $parsed :\) :)
+  (:   local:execQuery($parsed//parish/text(), $parsed//barony/text(), $parsed//city/text(), $parsed//county/text(), $parsed//province/text()) :)
+  (: else () :)
+
+
+(: else if (fn:not(fn:empty($baronies))) then :)
+(:     for $b in $baronies :)
+(:       let $barony := xsparql:createLiteral($b) :)
+(:           for * from <http://data.logainm.ie/> endpoint <http://logainm.deri.ie/sparql?format=xml&amp;query=> :)
+(:           where { $uri a spatial:Feature; logprop:type logcat:BAR; foaf:name $name . :)
+(:                   filter (regex(str($name), $barony, "i") && lang($name) = "en") . :)
+(:            } :)
+(:            return $uri :)
+(: else if (fn:not(fn:empty($cities))) then :)
+(:     for $c in $cities :)
+(:       let $city := xsparql:createLiteral($c) :)
+(:           for * from <http://data.logainm.ie/> endpoint <http://logainm.deri.ie/sparql?format=xml&amp;query=> :)
+(:           where { $uri a spatial:Feature; logprop:type logcat:CTH; foaf:name $name . :)
+(:                   filter (regex(str($name), $city, "i") && lang($name) = "en") . :)
+(:            } :)
+(:            return $uri :)
+(: else if (fn:not(fn:empty($counties))) then :)
+(:     for $c in $counties :)
+(:       let $county := xsparql:createLiteral($c) :)
+(:           for * from <http://data.logainm.ie/> endpoint <http://logainm.deri.ie/sparql?format=xml&amp;query=> :)
+(:           where { $uri a spatial:Feature; logprop:type logcat:CON; foaf:name $name . :)
+(:                   filter (regex(str($name), $county, "i") && lang($name) = "en") . :)
+(:            } :)
+(:            return $uri :)
+(: else if (fn:not(fn:empty($provinces))) then :)
+(:     for $p in $provinces :)
+(:       let $province := xsparql:createLiteral($p) :)
+(:           for * from <http://data.logainm.ie/> endpoint <http://logainm.deri.ie/sparql?format=xml&amp;query=> :)
+(:           where { $uri a spatial:Feature; logprop:type logcat:CON; foaf:name $name . :)
+(:                   filter (regex(str($name), $province, "i") && lang($name) = "en") . :)
+(:            } :)
+(:            return $uri :)
+
+
+
+(:           for $p in $parsed//parish/text() :)
+(:           let $parish := xsparql:createLiteral($p) :)
+(:           for $b in $parsed//barony/text() :)
+(:           let $barony := xsparql:createLiteral($b) :)
+(:           for $c in $parsed//city/text() :)
+(:           let $city := xsparql:createLiteral($c) :)
+(:           for $ct in $parsed//county/text() :)
+(:           let $city := xsparql:createLiteral($ct) :)
+(:           for $pv in $parsed//province/text() :)
+(:           let $province := xsparql:createLiteral($pv) :)
+(:           for * from <http://data.logainm.ie/> endpoint <http://logainm.deri.ie/sparql?format=xml&amp;query=> :)
+(:           where { $uri a spatial:Feature; logprop:type logcat:PAR; foaf:name $par . filter (regex(str($par), $parish, "i") && lang($par) = "en") .  :)
+(: optional { $uri spatial:P [ foaf:name $con; logprop:type logcat:CON ] . filter (regex(str($con), $county, "i") && lang($con) = "en")  } :)
+(: optional { $uri spatial:P [ foaf:name $bar; logprop:type logcat:BAR ] . filter (regex(str($bar), $barony, "i") && lang($bar) = "en") } :)
+(: optional { $uri spatial:P [ foaf:name $prov ] . filter (regex(str($prov), $province, "i") && lang($prov) = "en") } :)
+(: } :)
+(:           return ( :)
+(:              <marc:subfield code="a">{$par}</marc:subfield>, :)
+(:              <marc:subfield code="0">{$uri}</marc:subfield> :)
+(:           ) :)

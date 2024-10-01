@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <style>
+      .ui-autocomplete {
+          max-height: 250px;
+          overflow-y: auto;
+          /* prevent horizontal scrollbar */
+          overflow-x: hidden;
+      }
+      /* IE 6 doesn't support max-height
+      * we use height instead, but this forces the menu to always be this tall
+      */
+      * html .ui-autocomplete {
+          height: 250px;
+      }
+  </style>
+  </head>
+
+  <body>
+
+    <div>
+      <input id="logSearch" type="text"/>
+    </div>
+
+    <div>
+      <ul id="res"/>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+      var lang = 'en';
+      var LOGAINM_EP = 'http://data.logainm.ie/sparql/';
+      var size = 150;
+
+      function search(request, response) {
+
+            var val = $("#logSearch").val();
+            val = val.split(' ').map(function (d) {
+                if (d.length == 0) { d=" "} ;
+                if(d.length > 3) {
+                    d = d+'*';
+                } ;
+                return "'"+d+"'";
+            }).join(' AND ');
+
+            var q = 'SELECT distinct ?name ?id ?type ?county WHERE { ?id a [ foaf:name ?type ]; foaf:name ?name . '+
+                ' FILTER (langmatches(lang(?type), "'+lang+'"))'+
+                ' ?id spatial:P* ?cid . ?cid a <http://data.logainm.ie/category/CON>; foaf:name ?county .' +
+                ' FILTER (langmatches(lang(?county), "'+lang+'"))'+
+                ' ?name bif:contains "'+val+'" } '+
+                ' ORDER BY ?name LIMIT '+ size;
+
+            $.ajax({
+                url: LOGAINM_EP,
+                data: { query: q },
+                dataType: "json",
+                type: "GET",
+                success: function( data ) {
+                    response( $.map( data.results.bindings, function( item ) {
+                        return {
+                            label: item.name.value + " (" + item.type.value + (item.county ? ", county " + item.county.value : "")+ ")",
+                            value: item.name.value,
+                            uri: item.id.value
+                        }
+                    }))
+                }})
+        };
+
+      $("#logSearch").autocomplete({
+        minLength: 1,
+        source: search,
+        select: function( event, ui ) {
+         $("<li/>").html($("<a/>", {href: ui.item.uri, text: ui.item.uri, target: "_blank"}))
+        .appendTo($("#res"));
+      },
+
+      });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,281 @@
+html,
+body,
+.hero-unit {
+    width:100%;
+    height:100%;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* /\* Negative indent footer by it's height *\/ */
+  /* margin: 0 auto -80px; */
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 80px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+/* /\* Lastly, apply responsive CSS fixes as necessary *\/ */
+/* @media (max-width: 767px) { */
+/*   #footer { */
+/*     margin-left: -20px; */
+/*     margin-right: -20px; */
+/*     padding-left: 20px; */
+/*     padding-right: 20px; */
+/*   } */
+/* } */
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  height: 80px;
+  max-width: 680px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#map-canvas {
+    float: left;
+    width: 380px;
+    height: 285px;
+}
+
+#locationField {
+    clear: both;
+    vertical-align: middle;
+    top: 420px;
+    position: absolute;
+}
+
+#locationField label {
+    font-weight: bold;
+    /* clear: left; */
+    float: left;
+    margin-right: 5px;
+}
+
+/* /\* fix bug with bootstrap and google maps *\/ */
+/* img[src*="gstatic.com/"], img[src*="googleapis.com/"]  { */
+/*     max-width: 99999px; */
+/* } */
+
+
+#static {
+    float: right;
+}
+
+
+.resources {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    border: 1px solid #e3e3e3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#logainm .resources {
+    width : 350px;
+    height : 100px;
+    overflow: auto;
+    white-space: normal !important;
+}
+
+#dbpedia .resources {
+    width : 350px;
+    height : 250px;
+    overflow: auto;
+    white-space: normal !important;
+}
+
+#dbpedia .resources img {
+    float: left;
+    margin: 4px; 
+}
+
+.resource {
+    width : 70px;
+    height : 70px;
+}
+
+
+/* .block { */
+/*     display: none; */
+/* } */
+
+
+#placenames .resources ul {
+    -moz-column-count: 4;
+    -moz-column-gap: 1px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 1px;
+    column-count: 3;
+    column-gap: 1px;
+}
+
+#placenames, 
+#nli, 
+#europeana {
+    max-height: 150pt;
+    max-width: 175pt;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#placenames .resources, 
+#nli .resources, 
+#europeana .resources {
+    height: 150pt;
+    width: 175pt;
+    overflow: auto;
+}
+
+#dialog {
+    display: none;
+}
+
+#mashup .resources {
+    height: 300pt;
+}
+
+#resources-sidebar {
+    overflow: hidden;
+    width : 150px;
+    float: left;
+}
+
+#resources-sidebar #links {
+    float: left;
+}
+
+#resources-sidebar #eStatus, 
+#resources-sidebar #email {
+    float: left;
+    position: relative;
+}
+
+#resources-sidebar #link-container {
+    width : 150px;
+    height: 250pt;
+    overflow: auto;
+}
+
+#mashup {
+    height : 300px;
+    /* overflow: auto; */
+    /* white-space: normal !important; */
+    margin-top: 20pt;
+    /* display: none; */
+}
+
+#sources div {
+    margin-left: 15pt;
+    margin-rigt: 15pt;
+}
+
+#mashup #prev {
+    float: right;
+    width: 450pt;
+}
+
+.legend {
+    font-weight: bold;
+}
+
+
+
+#preview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	}
+
+.selected {
+    background-color: LightGrey;
+}
+
+#ihta {
+    display: none;
+}
+
+
+#dialog fieldset {
+    padding: 1em;
+    font: 80%/1 sans-serif;
+}
+
+#dialog label {
+    float: left;
+    width: 25%;
+    margin-right: 0.5em;
+    padding-top: 0.2em;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+#reCAPTCHA-error {
+    background-color: red;
+}
+
+#eStatus {
+    background-color: green;
+}
+
+
+a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+.popup {
+    background-color: LightGrey;
+    /* background-color:#FFFFFF; */
+    border:1px solid #999999;
+    cursor:default;
+    display:none;
+    /* margin-top: 15px; */
+    position:absolute;
+    text-align:left;
+    max-width: 300px;
+    z-index:50;
+/* padding: 25px 25px 20px; */
+}
+
+.legend img {
+    width: 12px;
+    height: 12px;
+    margin-left:5px;
+    transform-origin: top left; /* IE 10+, Firefox, etc. */
+    -webkit-transform-origin: top left; /* Chrome */
+    -ms-transform-origin: top left; /* IE 9 */
+}
+
+.rotate {
+    transform: rotate(90deg) translateY(-100%);
+    -webkit-transform: rotate(90deg) translateY(-100%);
+    -ms-transform: rotate(90deg) translateY(-100%);
+}

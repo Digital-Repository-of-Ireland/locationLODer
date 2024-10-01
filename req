@@ -1,0 +1,2 @@
+
+SELECT * WHERE { ?item dc:subject "Dublin"; dc:title ?title ; dc:subject "Dublin"; <http://purl.org/dc/terms/spatial> "Ireland" }

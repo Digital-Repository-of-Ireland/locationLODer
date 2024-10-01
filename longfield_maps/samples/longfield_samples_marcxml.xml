@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>01651nfm a22003731a 4500</marc:leader>
+        <marc:controlfield tag="001">vtls000301049</marc:controlfield>
+        <marc:controlfield tag="003">IeDuNL</marc:controlfield>
+        <marc:controlfield tag="005">20110727175500.0</marc:controlfield>
+        <marc:controlfield tag="007">aj      </marc:controlfield>
+        <marc:controlfield tag="008">110727s1809    ie |      a     0 e eng||</marc:controlfield>
+        <marc:datafield tag="039" ind1=" " ind2="9">
+            <marc:subfield code="y">201107271755</marc:subfield>
+            <marc:subfield code="z">VLOAD</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="045" ind1="0" ind2=" ">
+            <marc:subfield code="b">1809</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Longfield, John,</marc:subfield>
+            <marc:subfield code="d">ca. 1775-1833,</marc:subfield>
+            <marc:subfield code="e">surveyor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="2">
+            <marc:subfield code="a">A survey of lands at Windgate in the barony of Rathdown and County of Wicklow done for the Rev. Thomas Brownrigg.  By John Longfield. 1809.  Scale 10 perches to an inch.  Table of reference showing tenants and acreage of holdings.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="c">[1809]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 map</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="522" ind1=" " ind2=" ">
+            <marc:subfield code="a">Barony of Rathdown, County Wicklow, Province of Leinster, Ireland.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Reproduction rights owned by National Library of Ireland</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="561" ind1=" " ind2=" ">
+            <marc:subfield code="a">Donated by Robert Ormsby Longfield, d. 1908.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Rathdown (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Rathdown (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Rathdown (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Rathdown (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Wicklow (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Wicklow (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Wicklow (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Wicklow (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Wicklow (Ireland : County)</marc:subfield>
+            <marc:subfield code="v">Maps, Manuscript</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Manuscript maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="0">
+            <marc:subfield code="a">Longfield, Robert Ormsby,</marc:subfield>
+            <marc:subfield code="d">1844-1908,</marc:subfield>
+            <marc:subfield code="e">donor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="773" ind1="0" ind2=" ">
+            <marc:subfield code="i">In collection:</marc:subfield>
+            <marc:subfield code="t">Longfield Map Collection</marc:subfield>
+            <marc:subfield code="w">(IeDuNL)282687</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="852" ind1=" " ind2=" ">
+            <marc:subfield code="a">IeDuNL</marc:subfield>
+            <marc:subfield code="b">MS</marc:subfield>
+            <marc:subfield code="c">21 F. 49 / (018)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="949" ind1=" " ind2=" ">
+            <marc:subfield code="A">VIRTUAITEM</marc:subfield>
+            <marc:subfield code="d">40000</marc:subfield>
+            <marc:subfield code="x">24</marc:subfield>
+            <marc:subfield code="a">MS 21 F. 49 / (018)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="996" ind1=" " ind2=" ">
+            <marc:subfield code="a">true</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01878nfm a22003731a 4500</marc:leader>
+        <marc:controlfield tag="001">vtls000301157</marc:controlfield>
+        <marc:controlfield tag="003">IeDuNL</marc:controlfield>
+        <marc:controlfield tag="005">20110729161500.0</marc:controlfield>
+        <marc:controlfield tag="007">aj      </marc:controlfield>
+        <marc:controlfield tag="008">110714s1730    ie |      a     0 e eng||</marc:controlfield>
+        <marc:datafield tag="039" ind1=" " ind2="9">
+            <marc:subfield code="a">201107291615</marc:subfield>
+            <marc:subfield code="b">VLOAD</marc:subfield>
+            <marc:subfield code="y">201107271756</marc:subfield>
+            <marc:subfield code="z">VLOAD</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="045" ind1="0" ind2=" ">
+            <marc:subfield code="b">1730</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Cave, Thomas,</marc:subfield>
+            <marc:subfield code="d">fl. ca. 1709-1749,</marc:subfield>
+            <marc:subfield code="e">surveyor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="1" ind2="2">
+            <marc:subfield code="a">A map of part of the Lands of Glasnevin part of the Estate of the Dean of Christ Church held by John Bayly, copied from a survey made by Richard Francis in the year 1640, and traced out by Thomas Cave in the year 1730.  By a scale of 20 Perches to an Inch</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="c">[1730]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 map</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="522" ind1=" " ind2=" ">
+            <marc:subfield code="a">Barony of Coolock, County Dublin, Province of Leinster, Ireland.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Reproduction rights owned by National Library of Ireland</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="561" ind1=" " ind2=" ">
+            <marc:subfield code="a">Donated by Robert Ormsby Longfield, d. 1908.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Coolock (Barony)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Coolock (Barony)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Coolock (Barony)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Coolock (Barony)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Dublin (County)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Dublin (County)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Dublin (County)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Dublin (County)</marc:subfield>
+            <marc:subfield code="v">Early works to 1800</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Dublin (Ireland : County)</marc:subfield>
+            <marc:subfield code="x">History</marc:subfield>
+            <marc:subfield code="y">18th century</marc:subfield>
+            <marc:subfield code="v">Maps, Manuscript</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Manuscript maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="0">
+            <marc:subfield code="a">Longfield, Robert Ormsby,</marc:subfield>
+            <marc:subfield code="d">1844-1908,</marc:subfield>
+            <marc:subfield code="e">donor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="773" ind1="0" ind2=" ">
+            <marc:subfield code="i">In collection:</marc:subfield>
+            <marc:subfield code="t">Longfield Map Collection</marc:subfield>
+            <marc:subfield code="w">(IeDuNL)282687</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="852" ind1=" " ind2=" ">
+            <marc:subfield code="a">IeDuNL</marc:subfield>
+            <marc:subfield code="b">MS</marc:subfield>
+            <marc:subfield code="c">21 F. 51 / (103)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="949" ind1=" " ind2=" ">
+            <marc:subfield code="A">VIRTUAITEM</marc:subfield>
+            <marc:subfield code="d">40000</marc:subfield>
+            <marc:subfield code="x">24</marc:subfield>
+            <marc:subfield code="a">MS 21 F. 51 / (103)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="996" ind1=" " ind2=" ">
+            <marc:subfield code="a">true</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01826nfm a22004211a 4500</marc:leader>
+        <marc:controlfield tag="001">vtls000302211</marc:controlfield>
+        <marc:controlfield tag="003">IeDuNL</marc:controlfield>
+        <marc:controlfield tag="005">20110727180400.0</marc:controlfield>
+        <marc:controlfield tag="007">aj      </marc:controlfield>
+        <marc:controlfield tag="008">110727s1831    ie |      a     0 e eng||</marc:controlfield>
+        <marc:datafield tag="039" ind1=" " ind2="9">
+            <marc:subfield code="y">201107271804</marc:subfield>
+            <marc:subfield code="z">VLOAD</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="045" ind1="0" ind2=" ">
+            <marc:subfield code="b">1831</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="3">
+            <marc:subfield code="a">[A map of lands in the Parish of Templefort and Barony of Tullyhaw in the Co. of Cavan] 1831  Scale 80 Perches to an Inch.  Plantation mesure.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="c">[1831]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 map</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="522" ind1=" " ind2=" ">
+            <marc:subfield code="a">Parish of Templefort, Barony of Tullyhaw, County Cavan, Province of Ulster, Ireland.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Reproduction rights owned by National Library of Ireland</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="561" ind1=" " ind2=" ">
+            <marc:subfield code="a">Donated by Robert Ormsby Longfield, d. 1908.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Tullyhaw (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Tullyhaw (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Tullyhaw (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Tullyhaw (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Templefort Parish</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Templefort Parish</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Templefort Parish</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Templefort Parish</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Cavan (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Cavan (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Cavan (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Cavan (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Templefort Parish (Ireland)</marc:subfield>
+            <marc:subfield code="v">Maps, Manuscript</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Cavan (Ireland : County)</marc:subfield>
+            <marc:subfield code="v">Maps, Manuscript</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Manuscript maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="0">
+            <marc:subfield code="a">Longfield, Robert Ormsby,</marc:subfield>
+            <marc:subfield code="d">1844-1908,</marc:subfield>
+            <marc:subfield code="e">donor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="773" ind1="0" ind2=" ">
+            <marc:subfield code="i">In collection:</marc:subfield>
+            <marc:subfield code="t">Longfield Map Collection</marc:subfield>
+            <marc:subfield code="w">(IeDuNL)282687</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="852" ind1=" " ind2=" ">
+            <marc:subfield code="a">IeDuNL</marc:subfield>
+            <marc:subfield code="b">MS</marc:subfield>
+            <marc:subfield code="c">21 F. 37 / (030)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="949" ind1=" " ind2=" ">
+            <marc:subfield code="A">VIRTUAITEM</marc:subfield>
+            <marc:subfield code="d">40000</marc:subfield>
+            <marc:subfield code="x">24</marc:subfield>
+            <marc:subfield code="a">MS 21 F. 37 / (030)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="996" ind1=" " ind2=" ">
+            <marc:subfield code="a">true</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01668nfm a22003971a 4500</marc:leader>
+        <marc:controlfield tag="001">vtls000302333</marc:controlfield>
+        <marc:controlfield tag="003">IeDuNL</marc:controlfield>
+        <marc:controlfield tag="005">20120221171900.0</marc:controlfield>
+        <marc:controlfield tag="007">aj      </marc:controlfield>
+        <marc:controlfield tag="008">110727q17701840ie |      a     0 e eng||</marc:controlfield>
+        <marc:datafield tag="039" ind1=" " ind2="9">
+            <marc:subfield code="a">201202211719</marc:subfield>
+            <marc:subfield code="b">cryan</marc:subfield>
+            <marc:subfield code="y">201107271804</marc:subfield>
+            <marc:subfield code="z">VLOAD</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="045" ind1="2" ind2=" ">
+            <marc:subfield code="b">1770</marc:subfield>
+            <marc:subfield code="b">1840</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="2">
+            <marc:subfield code="a">A map of Lisnolan and Prison in the barony of Carra and County of Mayo.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="c">[between 1770 and 1840]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 map</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="500" ind1=" " ind2=" ">
+            <marc:subfield code="a">Some tearing on map.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="522" ind1=" " ind2=" ">
+            <marc:subfield code="a">Barony of Carra, County Mayo, Province of Connacht, Ireland.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Reproduction rights owned by National Library of Ireland</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="561" ind1=" " ind2=" ">
+            <marc:subfield code="a">Donated by Robert Ormsby Longfield, d. 1908.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Carra (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Carra (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Carra (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Carra (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Mayo (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Mayo (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Mayo (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2="0">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Mayo (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2="0">
+            <marc:subfield code="a">Mayo (Ireland : County)</marc:subfield>
+            <marc:subfield code="v">Maps, Manuscript</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Manuscript maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="0">
+            <marc:subfield code="a">Longfield, Robert Ormsby,</marc:subfield>
+            <marc:subfield code="d">1844-1908,</marc:subfield>
+            <marc:subfield code="e">donor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="773" ind1="0" ind2=" ">
+            <marc:subfield code="i">In collection:</marc:subfield>
+            <marc:subfield code="t">Longfield Map Collection</marc:subfield>
+            <marc:subfield code="w">(IeDuNL)282687</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="852" ind1=" " ind2=" ">
+            <marc:subfield code="a">IeDuNL</marc:subfield>
+            <marc:subfield code="b">MS</marc:subfield>
+            <marc:subfield code="c">21 F. 41 / (002)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="949" ind1=" " ind2=" ">
+            <marc:subfield code="A">VIRTUAITEM</marc:subfield>
+            <marc:subfield code="d">40000</marc:subfield>
+            <marc:subfield code="x">24</marc:subfield>
+            <marc:subfield code="a">MS 21 F. 41 / (002)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="996" ind1=" " ind2=" ">
+            <marc:subfield code="a">true</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="999" ind1=" " ind2=" ">
+            <marc:subfield code="a">VIRTUA               </marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="999" ind1=" " ind2=" ">
+            <marc:subfield code="a">VTLSSORT0070*0080*0450*2450*2600*3000*5000*5220*5400*5610*6500*6501*6502*6503*6504*6505*6506*6507*6510*6550*7000*7730*8520*9490*9991</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>01568nfm a22003611a 4500</marc:leader>
+        <marc:controlfield tag="001">vtls000302446</marc:controlfield>
+        <marc:controlfield tag="003">IeDuNL</marc:controlfield>
+        <marc:controlfield tag="005">20110727180500.0</marc:controlfield>
+        <marc:controlfield tag="007">aj      </marc:controlfield>
+        <marc:controlfield tag="008">110727q17701840ie |      a     0 e eng||</marc:controlfield>
+        <marc:datafield tag="039" ind1=" " ind2="9">
+            <marc:subfield code="y">201107271805</marc:subfield>
+            <marc:subfield code="z">VLOAD</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="045" ind1="2" ind2=" ">
+            <marc:subfield code="b">1770</marc:subfield>
+            <marc:subfield code="b">1840</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1="0" ind2="2">
+            <marc:subfield code="a">A survey of lands Cloongreaghan Cootehall Moigh and Foxhill in the barony of Boyle and County of Roscommon.  Scale 20 perches to an inch.  Names of tenants and acreage of holdings shown.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="260" ind1=" " ind2=" ">
+            <marc:subfield code="c">[between 1770 and 1840]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">1 map</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="522" ind1=" " ind2=" ">
+            <marc:subfield code="a">Barony of Boyle, County Roscommon, Province of Connacht, Ireland.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="540" ind1=" " ind2=" ">
+            <marc:subfield code="a">Reproduction rights owned by National Library of Ireland</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="561" ind1=" " ind2=" ">
+            <marc:subfield code="a">Donated by Robert Ormsby Longfield, d. 1908.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Boyle (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Boyle (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Boyle (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Boyle (Barony)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land use surveys</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Roscommon (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Administration of estates</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Roscommon (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Boundaries (Estates)</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Roscommon (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="650" ind1=" " ind2=" ">
+            <marc:subfield code="a">Land tenure</marc:subfield>
+            <marc:subfield code="z">Ireland</marc:subfield>
+            <marc:subfield code="z">Roscommon (County)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="651" ind1=" " ind2=" ">
+            <marc:subfield code="a">Roscommon (Ireland : County)</marc:subfield>
+            <marc:subfield code="v">Maps, Manuscript</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="655" ind1=" " ind2="0">
+            <marc:subfield code="a">Manuscript maps</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="700" ind1="1" ind2="0">
+            <marc:subfield code="a">Longfield, Robert Ormsby,</marc:subfield>
+            <marc:subfield code="d">1844-1908,</marc:subfield>
+            <marc:subfield code="e">donor</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="773" ind1="0" ind2=" ">
+            <marc:subfield code="i">In collection:</marc:subfield>
+            <marc:subfield code="t">Longfield Map Collection</marc:subfield>
+            <marc:subfield code="w">(IeDuNL)282687</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="852" ind1=" " ind2=" ">
+            <marc:subfield code="a">IeDuNL</marc:subfield>
+            <marc:subfield code="b">MS</marc:subfield>
+            <marc:subfield code="c">21 F. 44 / (043)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="949" ind1=" " ind2=" ">
+            <marc:subfield code="A">VIRTUAITEM</marc:subfield>
+            <marc:subfield code="d">40000</marc:subfield>
+            <marc:subfield code="x">24</marc:subfield>
+            <marc:subfield code="a">MS 21 F. 44 / (043)</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="996" ind1=" " ind2=" ">
+            <marc:subfield code="a">true</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>

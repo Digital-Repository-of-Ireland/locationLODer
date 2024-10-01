@@ -1,0 +1,6 @@
+.scrollable-area-wrapper .vscrollbar{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafaf9', endColorstr='#f8f6f5',GradientType=1 );
+}
+.scrollable-area-wrapper .vscroll-line{
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#fcfbfb',GradientType=1 );
+}

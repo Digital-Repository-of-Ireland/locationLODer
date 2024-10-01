@@ -1,0 +1,12 @@
+SELECT * FROM <http://data.logainm.ie/> 
+WHERE { ?uri a spatial:Feature;  
+             owl:sameAs ?link; 
+             foaf:name ?name_en; 
+             foaf:name ?name_ga; 
+             <http://geovocab.org/geometry#geometry> ?g . 
+             filter(regex(?link, "http://dbpedia.org") && lang(?name_en) = "en" && lang(?name_ga) = "ga") . 
+             { SELECT ?g (avg(fn:float(?lat)) as ?lat) (avg(fn:float(?long)) as ?long) 
+               WHERE { ?g geo:lat ?lat ; geo:long ?long .  } 
+                       GROUP by ?g 
+             }
+      }

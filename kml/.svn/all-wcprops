@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/logainm/!svn/ver/189/trunk/demo/kml
+END
+results.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/logainm/!svn/ver/179/trunk/demo/kml/results.xml
+END
+logainm-xml2kml.xquery
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/logainm/!svn/ver/187/trunk/demo/kml/logainm-xml2kml.xquery
+END
+query.sparql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/logainm/!svn/ver/189/trunk/demo/kml/query.sparql
+END
+logainm.kml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/logainm/!svn/ver/187/trunk/demo/kml/logainm.kml
+END
